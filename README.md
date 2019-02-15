@@ -5,7 +5,7 @@ A simple python script to get metering out of the J7-c USB Meter<br>
 Few items listed on [AliExpress](https://fr.aliexpress.com/wholesale?catId=0&SearchText=usb+tester++j7-c)
 
 You just have to plug a USB2Serial converter on the microUSB input to get access to measures.<br>
-The D+ / D- signals are not used at all for USB protocol but rather for UART signal. Consequently, you just need to cut out a microB connector from an old cable, and connect it to a Serial to USB cable.<br>
+The D+ / D- signals are not used at all for USB protocol but rather for UART signal. Consequently, you just need to cut out a microB connector from an old cable, and connect it to a Serial to USB cable (9600 8N1).<br>
 I made mine with an Arduino Nano and an old USB microB cable<br>
 ![Cable](./cable.jpg "Cable")<br>
 
@@ -15,9 +15,9 @@ I made mine with an Arduino Nano and an old USB microB cable<br>
   USB            USB                 FTDI
  microB         wires                wires
   
-               - Vcc            
-  ###   ------ - D-  (white)   (yellow) Rx  - -------
-  ###   ------ - D+  (green)   (orange) Tx  - -------
+               - Vcc (red)           
+  ###   ------ - D-  (white)   (yellow) Tx  - -------
+  ###   ------ - D+  (green)   (orange) Rx  - -------
                - Gnd (black)    (black) Gnd - 
 ```
 
