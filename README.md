@@ -23,11 +23,24 @@ I made mine with an Arduino Nano and an old USB microB cable<br>
 
 ## Instalation 
 
-```
-python3 -m pip install -r requirements.txt
-```
+Clone the repo:
+
+	git clone https://github.com/bousqi/usb_meter
+
+Create a virtual env and install dependencies
+
+	cd usb_meter 
+	 
+	sudo apt install virtualenv
+	virtualenv -p /usr/bin/python3.6 venv
+	source venv/bin/activate
+	pip install -r requirements.txt
 
 ## Usage
+
+Remenber to source the appropriate virtualenv before usage
+
+	source venv/bin/activate
 
 #### Help
 ```
