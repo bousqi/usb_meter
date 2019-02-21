@@ -1,4 +1,4 @@
-# usb_meter
+# Python USB meter
 
 A simple python script to get metering out of the J7-c USB Meter<br>
 ![J7-c](./DSC_0804.jpg "USB Meter")<br>
@@ -29,18 +29,39 @@ Clone the repo:
 
 Create a virtual env and install dependencies
 
-	cd usb_meter 
-	 
-	sudo apt install virtualenv
-	virtualenv -p /usr/bin/python3.6 venv
-	source venv/bin/activate
-	pip install -r requirements.txt
+#### Linux
+```
+cd usb_meter 
+
+sudo apt install virtualenv
+virtualenv -p /usr/bin/python3.6 venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+#### Windows
+```
+cd usb_meter 
+
+pip install virtualenv
+virtualenv venv
+.\venv\Scripts\activate.cmd
+pip install -r requirements.txt
+```
 
 ## Usage
 
 Remenber to source the appropriate virtualenv before usage
 
-	source venv/bin/activate
+```
+source venv/bin/activate
+```
+
+or
+
+```
+.\venv\Scripts\activate.cmd
+```
 
 #### Help
 ```
